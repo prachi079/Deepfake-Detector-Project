@@ -1,4 +1,7 @@
-# Model load karne ka function (agar pehle se nahi hai)
+import cv2
+import numpy as np
+import tensorflow as tf
+from PIL import Image Model load karne ka function (agar pehle se nahi hai)
 def predict_frame(uploaded_file):
     try:
         # 1. Image ko aise format mein badalna jo OpenCV samajh sake
