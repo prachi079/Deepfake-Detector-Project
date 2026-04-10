@@ -1,4 +1,3 @@
 streamlit
 gdown
 opencv-python-headless
-tensorflow
