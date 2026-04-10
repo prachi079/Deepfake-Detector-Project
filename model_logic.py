@@ -14,8 +14,8 @@ if not os.path.exists(output):
 
 model = load_model(output)
 
-def predict_frame(frame):
-    img = cv2.resize(frame, (128, 128))
+def predict_frame(image):
+    img = cv2.resize(image, (128, 128))
     img = img / 255.0
     img = np.expand_dims(img, axis=0)
     prediction = model.predict(img)[0][0]
