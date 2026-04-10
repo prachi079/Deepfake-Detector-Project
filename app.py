@@ -1,6 +1,6 @@
 import streamlit as st
 from PIL import Image
-from model_logic import predict_image
+from model_logic import predict_frame
 
 st.set_page_config(page_title="Deepfake Detector", layout="wide")
 
