@@ -21,7 +21,7 @@ if uploaded_file is not None:
         st.write("### Analysis Result")
         with st.spinner("Scanning pixels and faces..."):
             # Result aur confidence score lena
-            result, confidence = predict_image(image)
+            result, confidence = predict_frame(frame)
             
             # Agar face nahi mila toh special message dikhayein
             if result == "No Face Detected":
